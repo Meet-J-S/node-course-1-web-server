@@ -53,6 +53,16 @@ app.get('/',
   })
 });
 
+app.get('/profile',
+  (request,response)=>
+  {
+      response.render('profile.hbs',
+      {
+        pageT : 'Profile Page',
+        nm: 'Profile'
+      });
+  });
+
 app.get('/about',
   (request,response)=>
   {
